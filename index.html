@@ -65,6 +65,28 @@
             gap: 30px;
         }
 
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid transparent;
+            background: var(--gradient);
+            padding: 4px;
+            animation: fadeInLeft 1s ease-out;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
         .profile-info h1 {
             font-size: 2.5em;
             color: var(--secondary);
@@ -428,6 +450,17 @@
                 text-align: center;
             }
 
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+
+            .profile-image {
+                width: 100px;
+                height: 100px;
+            }
+
             .contact-info {
                 align-items: center;
             }
@@ -478,10 +511,13 @@
         <!-- Header -->
         <header class="header">
             <div class="header-content">
-                <div class="profile-info">
-                    <h1>Mohd Suhel Mansoori</h1>
-                    <div class="title">Senior Software Engineer | 6 Years Experience</div>
-                    <p style="color: #64748b;">Tech Lead * Full Stack * System Architect * AI Integration</p>
+                <div class="profile-section">
+                    <img src="https://ca.slack-edge.com/TPMQY9K2B-U04MJMV6DPW-72329a4c3df1-512" alt="Mohd Suhel Mansoori" class="profile-image">
+                    <div class="profile-info">
+                        <h1>Mohd Suhel Mansoori</h1>
+                        <div class="title">Senior Software Engineer | 6 Years Experience</div>
+                        <p style="color: #64748b;">Tech Lead * Full Stack * System Architect * AI Integration</p>
+                    </div>
                 </div>
                 <div class="contact-info">
                     <a href="tel:+917088634617" class="contact-item">
